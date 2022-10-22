@@ -3,12 +3,13 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+/*header=>*/
 .header {
     width: 100%;
     height: 70px;
     background-color: #EC715F;
 }
+
 .header-group {
     width :1024px;
     height :70px;
@@ -16,9 +17,9 @@
     display : flex;
     justify-content :space-between;
 }
+
 .logo {
     height: 70px;
-    
 }
 
 .nav-list {
@@ -33,7 +34,9 @@
     line-height :70px;
     color : #FAFAFA;
 }
+/*<=header*/
 
+/*main-visual=>*/
 .main-visual {
     width: 100%;
     height: 650px;
@@ -55,19 +58,97 @@
     padding-top: 10px;
     font-size: 20px;
 }
+/*<=main-visual*/
 
+/*portfolio=>*/
 .portfolio {
     width: 100%;
-    height: 920px;
-    background-color :#ECEFF1; 
+    background-color :#ECEFF1;
+    padding-bottom: 90px;
 }
 
 .portfolio-content {
     width : 920px;
-    height: 920px;
-    background-color: orange;
     margin :0 auto;
 }
+
+.heading {
+    text-align: center;
+    font-size: 32px;
+    padding-top: 90px;
+    padding-bottom : 8px;
+}
+
+.border {
+    width: 70px;
+    height: 3px;
+    background-color :#EC715F;
+    margin: 0 auto;
+}
+
+.heading-text {
+    text-align: center;
+    font-size: 16px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+ .production-group {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ .production-bg-1 {
+    width: 300px;
+    height: 250px;
+    background-image: url(img/sketch.jpg);
+    background-size: cover;
+    background-position: center;
+    margin-right: 10px;
+    margin-bottom: 10px;
+ }
+ .production-bg-2 {
+    width: 300px;
+    height: 250px;
+    background-image:url(img/websuku.png);
+    background-size: cover;
+    background-position: center;
+    margin-right: 10px;
+    
+ }
+ .production-bg-3 {
+    width: 300px;
+    height: 250px;
+    background-image: url(img/write.jpg);
+    background-size: cover;
+    background-position: center;
+ }
+    
+ .production-bg-4 {
+    width: 300px;
+    height: 250px;
+    background-image: url(img/webcamp.png);
+    background-size: cover;
+    background-position: center;
+    margin-right: 10px;
+ }
+
+ .production-bg-5 {
+    width: 300px;
+    height: 250px;
+    background-image: url(img/talk.jpg);
+    background-size: cover;
+    background-position: center;
+    margin-right: 10px;
+     
+ }
+ .production-bg-6 {
+    width: 300px;
+    height: 250px;
+    background-image: url(img/webcamp-mother.png);
+    background-size: cover;
+    background-position: center;
+ }
 
 .feature {
     width: 100%;
