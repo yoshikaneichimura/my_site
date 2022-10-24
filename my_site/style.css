@@ -149,12 +149,44 @@
     background-size: cover;
     background-position: center;
  }
+ 
+ /*<=portfolio*/
 
+/*feature=>*/
 .feature {
     width: 100%;
     height: 980px;
-    background-color:yellow;
     margin:0 auto;
+}
+
+.strength-group {
+    width: 980px;
+    margin:0 auto;
+    display: flex;
+    
+}
+
+.strength {
+    width :320px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.strength-end {
+    width :320px;
+    height: auto;
+   
+}
+
+.icon {
+    font-size: 60px;
+    text-align: center; 
+}
+
+
+.strength-title {
+    text-align: center;
+    margin: 10px;
 }
 
 .profile {
