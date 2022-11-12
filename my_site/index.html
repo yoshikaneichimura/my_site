@@ -3,6 +3,7 @@
     <head>
         
         <meta charset = "UTF-8" />
+        <meta name = "viewport" content = "width=device-width,initial-scale=1.0">
         <script src="https://kit.fontawesome.com/a5fc0fa3f9.js" crossorigin="anonymous"></script>
         <link rel = "stylesheet" href = "style.css" />
         <title>my_site</title>
@@ -12,14 +13,22 @@
         <header class = "header" >
             <div class = "header-group" >
                 <img class = "logo" src = "img/logo.png" alt = "ロゴ" >
-                <nav>
-                    <ul class = "nav-list" >
-                        <li class = "nav-list-item" >Portfolio</li>
-                        <li class = "nav-list-item" >Feature</li>
-                        <li class = "nav-list-item" >Profile</li>
-                        <li class = "nav-list-item" >Contact</li>
-                    </ul>
-                </nav>
+                <div class = "nav" >
+                    
+                    <input id = "drawer_input" class = "drawer_hidden" type = "checkbox" >
+                    
+                    <label for = "drawer_input" class = "drawer_open" ><span></span></label>
+                    
+                    <nav class = "nav-content" >
+                        <ul class = "nav-list" >
+                            <li class = "nav-list-item" >Portfolio</li>
+                            <li class = "nav-list-item" >Feature</li>
+                            <li class = "nav-list-item" >Profile</li>
+                            <li class = "nav-list-item" >Contact</li>
+                        </ul>
+                    </nav>
+                </div>
+                    
             </div>
         </header>
         
@@ -33,104 +42,107 @@
             
             <!--portfolio=>-->
             <div class = "portfolio" >
-                <div class = "portfolio-content" >
-                    
-                    <h2 class = "heading" >Portfolio</h2>
-                    <div class = "border" ></div>
-                    <p class = "heading-text" >
-                    It is a long established fact that a reader will be distracted by the readable
-                    </br>
-                    content of a page when looking at its layout.
-                    </br>
-                    The point of using  Lorem lpsum is that it has a more-or-less normal distribution of letters
-                    </p>
-                    
-                    <div class = "production-group" >
-                        <div class = "production-bg-1"></div>
-                        <div class = "production-bg-2"></div>
-                        <div class = "production-bg-3"></div>
-                        <div class = "production-bg-4"></div>
-                        <div class = "production-bg-5"></div>
-                        <div class = "production-bg-6"></div>
+                <div class = "container" >
+                    <div class = "portfolio-content" >
+                       
+                        <h2 class = "heading" >Portfolio</h2>
+                        <div class = "border" ></div>
+                        <p class = "heading-text" >
+                        It is a long established fact that a reader will be distracted by the readable
+                        </br>
+                        content of a page when looking at its layout.
+                        </br>
+                        The point of using  Lorem lpsum is that it has a more-or-less normal distribution of letters
+                        </p>
+                        
+                        <div class = "production-group" >
+                            <div class = "production-bg-1"></div>
+                            <div class = "production-bg-2"></div>
+                            <div class = "production-bg-3"></div>
+                            <div class = "production-bg-4"></div>
+                            <div class = "production-bg-5"></div>
+                            <div class = "production-bg-6"></div>
+                        </div>
                     </div>
                 </div>
             </div>
             <!--<=portfolio-->
             
             <div class = "feature" >
-                <h1 class = "heading">Feature</h1>
-                <div class = "border" ></div>
-                <p class = "heading-text" >
-                    It is a long established  fact that a reader will be distrated by the readable
-                    </br>
-                    content of a page when looking at its layout.
-                    </br>
-                    The point of using Lorem lpsum is that it has a more-or-less normal distribution of letters
-                </p>
-                <div class = "strength-group" >
-                    <div class = "strength" >
-                    <h1 class = "icon" ><i class="fa-solid fa-code"></i></h1>
-                    <h3 class = "strength-title" >Strength 1</h3>
-                    <p>Contrary to popular belief, Lorem lpsum
-                    </br>
-                    is not simply random text. It has roots
-                    </br>
-                    in a piece of classical Latin literature
-                    </br>
-                    form 45 BC, making it over 2000 years
-                    </br>
-                    old. Richard McClintock, a Latin
-                    </br>
-                    professer at Hampden-Sydeny College
-                    </br>
-                    in Virginia, looked up one of the more
-                    </br>
-                    obscure Latin words, consectetur
+                <div class = "container" >
+                    <h1 class = "heading">Feature</h1>
+                    <div class = "border" ></div>
+                    <p class = "heading-text" >
+                        It is a long established  fact that a reader will be distrated by the readable
+                        </br>
+                        content of a page when looking at its layout.
+                        </br>
+                        The point of using Lorem lpsum is that it has a more-or-less normal distribution of letters
                     </p>
+                    <div class = "strength-group" >
+                        <div class = "strength" >
+                        <h1 class = "icon" ><i class="fa-solid fa-code"></i></h1>
+                        <h3 class = "strength-title" >Strength 1</h3>
+                        <p>Contrary to popular belief, Lorem lpsum
+                        </br>
+                        is not simply random text. It has roots
+                        </br>
+                        in a piece of classical Latin literature
+                        </br>
+                        form 45 BC, making it over 2000 years
+                        </br>
+                        old. Richard McClintock, a Latin
+                        </br>
+                        professer at Hampden-Sydeny College
+                        </br>
+                        in Virginia, looked up one of the more
+                        </br>
+                        obscure Latin words, consectetur
+                        </p>
+                        </div>
+                        
+                        <div class = "strength" >
+                        <h1 class = "icon" ><i class="fa-sharp fa-solid fa-desktop"></i></h1>
+                        <h3 class = "strength-title" >Strength 2</h3>
+                        <p>Contrary to popular belief, Lorem lpsum
+                        </br>
+                        is not simply random text. It has roots
+                        </br>
+                        in a piece of classical Latin literature
+                        </br>
+                        form 45 BC, making it over 2000 years
+                        </br>
+                        old. Richard McClintock, a Latin
+                        </br>
+                        professer at Hampden-Sydeny College
+                        </br>
+                        in Virginia, looked up one of the more
+                        </br>
+                        obscure Latin words, consectetur
+                        </p>
+                        </div>
+                        
+                        <div class = "strength-end" >
+                        <h1 class = "icon" ><i class="fa-sharp fa-solid fa-gamepad"></i></h1>
+                        <h3 class = "strength-title" >Strength 3</h3>
+                        <p>Contrary to popular belief, Lorem lpsum
+                        </br>
+                        is not simply random text. It has roots
+                        </br>
+                        in a piece of classical Latin literature
+                        </br>
+                        form 45 BC, making it over 2000 years
+                        </br>
+                        old. Richard McClintock, a Latin
+                        </br>
+                        professer at Hampden-Sydeny College
+                        </br>
+                        in Virginia, looked up one of the more
+                        </br>
+                        obscure Latin words, consectetur
+                        </p>
+                        </div>
                     </div>
-                    
-                    <div class = "strength" >
-                    <h1 class = "icon" ><i class="fa-sharp fa-solid fa-desktop"></i></h1>
-                    <h3 class = "strength-title" >Strength 2</h3>
-                    <p>Contrary to popular belief, Lorem lpsum
-                    </br>
-                    is not simply random text. It has roots
-                    </br>
-                    in a piece of classical Latin literature
-                    </br>
-                    form 45 BC, making it over 2000 years
-                    </br>
-                    old. Richard McClintock, a Latin
-                    </br>
-                    professer at Hampden-Sydeny College
-                    </br>
-                    in Virginia, looked up one of the more
-                    </br>
-                    obscure Latin words, consectetur
-                    </p>
-                    </div>
-                    
-                    <div class = "strength-end" >
-                    <h1 class = "icon" ><i class="fa-sharp fa-solid fa-gamepad"></i></h1>
-                    <h3 class = "strength-title" >Strength 3</h3>
-                    <p>Contrary to popular belief, Lorem lpsum
-                    </br>
-                    is not simply random text. It has roots
-                    </br>
-                    in a piece of classical Latin literature
-                    </br>
-                    form 45 BC, making it over 2000 years
-                    </br>
-                    old. Richard McClintock, a Latin
-                    </br>
-                    professer at Hampden-Sydeny College
-                    </br>
-                    in Virginia, looked up one of the more
-                    </br>
-                    obscure Latin words, consectetur
-                    </p>
-                    </div>
-                    
                 </div>
                
             </div>
@@ -208,7 +220,7 @@
             
         <footer>
             <div class = "footer" >
-                <p class = "footer-content" >©︎ 2017 WebCamp</p>
+                <p class = "footer-content" >©︎2017 WebCamp</p>
             </div>
         </footer>
         
