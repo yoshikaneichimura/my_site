@@ -100,62 +100,45 @@
     padding-top: 30px;
 }
 
- .production-group {
-    padding: 30px 0 90px 0;
+.production-group {
     display: flex;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
+    width: 920px;
+    /*padding: 30px 0 90px 0;*/
+    margin: 0 auto;
 }
-
- .production-bg-1 {
+    
+.production {
     width: 300px;
     height: 250px;
-    background-image: url(img/sketch.jpg);
     background-size: cover;
     background-position: center;
     margin-right: 10px;
     margin-bottom: 10px;
  }
- .production-bg-2 {
-    width: 300px;
-    height: 250px;
+
+ .bg-1 {
+    background-image: url(img/sketch.jpg);
+ }
+ 
+ .bg-2 {
     background-image:url(img/websuku.png);
-    background-size: cover;
-    background-position: center;
-    margin-right: 10px;
-    
  }
- .production-bg-3 {
-    width: 300px;
-    height: 250px;
+ 
+ .bg-3 {
     background-image: url(img/write.jpg);
-    background-size: cover;
-    background-position: center;
  }
     
- .production-bg-4 {
-    width: 300px;
-    height: 250px;
+ .bg-4 {
     background-image: url(img/webcamp.png);
-    background-size: cover;
-    background-position: center;
-    margin-right: 10px;
  }
 
- .production-bg-5 {
-    width: 300px;
-    height: 250px;
+ .bg-5 {
     background-image: url(img/talk.jpg);
-    background-size: cover;
-    background-position: center;
-    margin-right: 10px;
-     
  }
- .production-bg-6 {
-    width: 300px;
-    height: 250px;
+ 
+ .bg-6 {
     background-image: url(img/webcamp-mother.png);
-    background-size: cover;
-    background-position: center;
  }
  /*<=portfolio*/
 
@@ -282,6 +265,9 @@
     line-height: 60px; 
 }
 
+
+
+
 @media screen and (max-width:767px){
     .header {
         width: 90%;
@@ -354,8 +340,52 @@
         left : 0;
     }
 /*ハンバーガーメニュー*/
-
+    .main-visual {
+        width: 90%;
+        height: 650px;
+        background-image :url(img/code.png);
+        background-size :cover; 
+        background-position :center;
+    }
+    
+    .mv-title {
+        color: white;
+        text-align: center; 
+        padding-top :200px;
+        font-size :40px;
+    }
+    
+    .mv-text {
+        color: white;
+        text-align: center;
+        padding-top: 10px;
+        font-size: 18px;
+    }
+    
+    .portfolio {
+        width: 90%;
+        background-color :#ECEFF1;
+    }
+    
+    .container {
+    width : 90%;
+    margin :0 auto;
 }
+    
+    .production-group {
+        
+    padding: 30px 0 90px 0;
+}
+    .sp-none {
+        display : none;
+        
+    }
+    
+        
+
+    
+}
+
 
 
 
