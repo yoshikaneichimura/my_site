@@ -11,11 +11,14 @@
 }
 
 .header-group {
-    width :1024px;
-    height :70px;
     margin :0 auto;
     display : flex;
     justify-content :space-between;
+}
+
+.container {
+    width :1024px;
+    margin: 0 auto;
 }
 
 .logo {
@@ -37,6 +40,14 @@
     margin: 0 30px;
     line-height :70px;
     color : #FAFAFA;
+}
+
+.nav-list-item a {
+    color : #FAFAFA;
+}
+
+a {
+    text-decoration: none;
 }
 /*<=header*/
 
@@ -68,11 +79,6 @@
 .portfolio {
     width: 100%;
     background-color :#ECEFF1;
-}
-
-.container {
-    width : 1024px;
-    margin :0 auto;
 }
 
 .portfolio-content {
@@ -123,14 +129,13 @@
  .production:nth-child(6) {
      margin-right: 0;
  }
- 
 
  .bg-1 {
     background-image: url(img/sketch.jpg);
  }
  
  .bg-2 {
-    background-image:url(img/websuku.png);
+    background-image: url(img/websuku.png);
  }
  
  .bg-3 {
@@ -156,7 +161,6 @@
     margin:0 auto;
     padding-bottom: 90px;
 }
-
 
 .strength-group {
     width: 980px;
@@ -185,6 +189,11 @@
     text-align: center;
     margin: 10px;
 }
+
+.strength-text {
+    text-align: left;
+    font-size: 16px;
+}
 /*<=feature*/
 
 /*profile=>*/
@@ -198,7 +207,6 @@
     width: 1024px;
     display: flex;
     padding: 30px 0 90px 0;
-    
 }
 
 .left-content {
@@ -220,6 +228,7 @@
 .discription-title:first-child {
     margin-top: 0px;
 }
+
 .discription-title {
     font-size: 20px;
     margin: 20px 0px 5px 0px;
@@ -249,7 +258,12 @@
 
 .discription-title {
     font-size: 20px;
-    margin-bottom :5px;
+    margin-bottom : 5px;
+}
+
+.link-text {
+    text-decoration : underline;
+    color : #212121;
 }
 
 .fa-brands {
@@ -266,6 +280,7 @@
     height: 60px;
     background-color: #EC715F;
 }
+
 .footer-content {
     font-size: 16px;
     color: #FAFAFA;
@@ -273,13 +288,19 @@
     line-height: 60px; 
 }
 
-
-
-
 @media screen and (max-width:767px){
+    
     .header {
-        width: 90%;
-        background-color: red;
+        height: 50px;
+    }
+    
+    .logo {
+        height: 50px;
+    }
+    
+    .container {
+        width : 90%;
+        margin :0 auto;
     }
 /*ハンバーガーメニュー=>*/
     .drawer_hidden {
@@ -305,7 +326,7 @@
         height: 3px;
         width: 25px;
         border-radius: 3px;
-        background: #333;
+        background: #FAFAFA;
         transition: 0.5s;
         position: absolute;
     }
@@ -335,7 +356,7 @@
     
     .nav-content {
         width: 100%;
-        height: 100%;
+        height: 50px;
         position: fixed;
         top: 0;
         left: 100%;
@@ -349,7 +370,7 @@
     }
 /*ハンバーガーメニュー*/
     .main-visual {
-        width: 90%;
+        width: 100%;
         height: 650px;
         background-image :url(img/code.png);
         background-size :cover; 
@@ -370,29 +391,30 @@
         font-size: 18px;
     }
     
-    .portfolio {
-        width: 90%;
-        background-color :#ECEFF1;
-    }
-    
-    .container {
-        width : 90%;
-        margin :0 auto;
+    .portfolio-content {
+        width: 100%;
     }
     
     .production-group {
         width: 300px;
     }
     
+    .production {
+        margin:0 0 10px 0;
+     }
+ 
+     .production:nth-child(6) {
+         margin-bottom: 0;
+     }
+    
     .sp-none {
-        display : none;
+        display: none;
     }
     
     .strength-group {
         flex-flow: row wrap;
         width: 320px;
         margin:0 auto;
-       
     }
     
     .strength:first-child {
@@ -403,8 +425,12 @@
         margin-top: 10px;
     }
     
+    .profile {
+        width : 100%;
+    }
+    
     .profile-group {
-        width: 90%;
+        width: 100%;
         flex-flow: row wrap;
         text-align: center;
     }
@@ -418,17 +444,18 @@
         margin-top: 20px;
     }
     
-        
-
+    .contact {
+        width : 90%;
+    }
     
+    .contact-group {
+        width : 100%;
+        flex-flow: row wrap;
+        text-align: center;
+    }
+    
+    .footer {
+        width : 100%;
+    }
+
 }
-
-
-
-
-
-/*. {*/
-/*    width :;*/
-/*    height:;*/
-/*    background-color:;*/
-/*}*/
