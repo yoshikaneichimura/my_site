@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -30,16 +30,16 @@
     }
 
 .nav-list {
-    text-align: right;
-    display: inline-block;
+    display: flex;
 }
 
 .nav-list-item {
-    list-style: none;
-    display: inline-block;
-    margin: 0 30px;
+    width: 120px;
     line-height :70px;
     color : #FAFAFA;
+    padding: 0 30px;
+    list-style: none;
+    font-size: 16px;
 }
 
 .nav-list-item a {
@@ -76,9 +76,8 @@ a {
 /*<=main-visual*/
 
 /*portfolio=>*/
-.portfolio {
-    width: 100%;
-    background-color :#ECEFF1;
+#portfolio {
+    background-color: #ECEFF1;
 }
 
 .portfolio-content {
@@ -122,11 +121,15 @@ a {
     margin: 10px 10px 0 0;
  }
  
- .production:nth-child(3) {
+ .production:nth-child(3n) {
      margin-right: 0; 
  }
  
- .production:nth-child(6) {
+ .production:nth-child(-n+3) {
+     margin-top: 0;
+ }
+ 
+ .production:nth-child(6n) {
      margin-right: 0;
  }
 
@@ -156,10 +159,9 @@ a {
  /*<=portfolio*/
 
 /*feature=>*/
-.feature {
-    width: 100%;
-    margin:0 auto;
-    padding-bottom: 90px;
+#feature {
+    background-size: cover;
+    background-position: center;
 }
 
 .strength-group {
@@ -186,6 +188,7 @@ a {
 }
 
 .strength-title {
+    font-size: 20px;
     text-align: center;
     margin: 10px;
 }
@@ -197,9 +200,7 @@ a {
 /*<=feature*/
 
 /*profile=>*/
-.profile {
-    width : 100%;
-    height: auto;
+#profile {
     background-color: #ECEFF1;
 }
 
@@ -233,12 +234,9 @@ a {
     font-size: 20px;
     margin: 20px 0px 5px 0px;
 }
+/*<= profile*/
 
-.contact {
-    width : 100%;
-    margin: 0 auto;
-}
-
+/*contact=>*/
 .contact-group {
     width : 800px;
     margin: 0 auto;
@@ -266,6 +264,10 @@ a {
     color : #212121;
 }
 
+.discription-text {
+    font-size: 16px;
+}
+
 .fa-brands {
     font-size: 45px;
     margin-right: 20px;
@@ -291,7 +293,7 @@ a {
 @media screen and (max-width:767px){
     
     .header {
-        height: 50px;
+        height: 60px;
     }
     
     .logo {
@@ -338,7 +340,6 @@ a {
     .drawer_open span:after {
         top: 8px;
     }
-    
      
     #drawer_input:checked ~ .drawer_open span:before {
         bottom: 0;
@@ -368,7 +369,8 @@ a {
     #drawer_input:checked ~ .nav-content {
         left : 0;
     }
-/*ハンバーガーメニュー*/
+/*<=ハンバーガーメニュー*/
+
     .main-visual {
         width: 100%;
         height: 650px;
